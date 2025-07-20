@@ -5,7 +5,7 @@ import com.innovation.postly.data.remote.model.PostDto
 import com.innovation.postly.domain.model.Post
 
 fun PostDto.toEntity(): PostsEntity {
-    val uniqueString = "${urlToImage.orEmpty()}"
+    val uniqueString = "${title.orEmpty()}_${description.orEmpty()}_${urlToImage.orEmpty()}"
     val id = uniqueString.hashCode().toString()
 
     return PostsEntity(
