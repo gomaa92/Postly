@@ -18,6 +18,19 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+       // Load API key from environment variable or gradle properties
+        buildConfigField(
+            "String",
+            "API_KEY",
+            "\"${System.getenv("API_KEY") ?: project.findProperty("API_KEY") ?: ""}\""
+        )
+
+        buildConfigField(
+            "String",
+            "BASE_URL",
+            "\"https://newsapi.org/v2/\""
+        )
     }
 
     buildTypes {
@@ -38,6 +51,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -57,23 +71,10 @@ dependencies {
     implementation(libs.kotlinx.coroutines)
     implementation(libs.retrofit)
     implementation(libs.retrofit.moshi)
-
+    implementation (libs.logging.interceptor)
 
     ksp(libs.hilt.compiler)
     ksp(libs.moshi)
-
-    //Datastore
-    implementation(libs.androidx.datastore.preferences)
-
-    //Compose Foundation
-    implementation(libs.androidx.foundation)
-
-    //Accompanist
-    implementation(libs.accompanist.systemuicontroller)
-
-    //Paging 3
-    implementation(libs.androidx.paging.runtime.ktx)
-    implementation(libs.androidx.paging.compose)
 
     //Room
     implementation(libs.androidx.room.runtime)
