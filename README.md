@@ -1,62 +1,64 @@
-📱 Postly Android App
+# 📱 Postly Android App
 
-Postly is a modular Android application built with Jetpack Compose, following MVVM combined with MVI for state management.
-It leverages modern Android development libraries, ensuring clean architecture and maintainability.
+Postly is a modular Android application built with **Jetpack Compose**, following **MVVM** combined with **MVI** for state management. It leverages modern Android development libraries, ensuring clean architecture and maintainability.
 
-🛠️ Tech Stack
+---
 
-Jetpack Compose — Modern UI Toolkit
+## 🛠️ Tech Stack
 
-MVVM + MVI — Architecture & State Management
+* **Jetpack Compose** — Modern UI Toolkit
+* **MVVM + MVI** — Architecture & State Management
+* **Kotlin Coroutines** — Asynchronous Programming
+* **StateFlow** — Reactive UI State Handling
+* **Hilt** — Dependency Injection
+* **Room** — Local Database for Offline Mode
+* **Custom Pagination** — Full Control over Pagination Logic
+* **Modularization** — Clean Project Separation (Features, Data, Domain, Core, etc.)
 
-Kotlin Coroutines — Asynchronous Programming
+---
 
-StateFlow — Reactive UI State Handling
+## 🗂️ Project Modules
 
-Hilt — Dependency Injection
+* `app` — Main application module
+* `designsystem` — Jetpack Compose component and theme
+* `navigation` — Handle app navigation through the App
+* `utils` — Contains utilities that can be used throughout the App (e.g., internetmanager)
+* `features` — Feature-based modules (e.g., posts)
+  * `common` — Common utilities, network, and UI components
+  * `data` — Data layer, repositories, API calls, DAOs
+  * `domain` — Business logic and use cases
 
-Room — Local Database for Offline Mode
+---
 
-Custom Pagination — Full Control over Pagination Logic
+## 🚀 How to Run the Project
 
-Modularization — Clean Project Separation (Features, Utils, DesignSsystem, Navigation, etc.)
+1. **Clone the Repository**
 
+   ```bash
+   git clone [https://github.com/your-org/postly-android.git](https://github.com/gomaa92/Postly.git)
+   ```
 
-🗂️ Project Modules
+2. **Open in Android Studio**
 
-app — Main application module
+   * Android Studio Hedgehog or newer is recommended.
 
-features — Feature-based modules (e.g., posts)
-designsystem -Jetpack compsoe component and theme
-navigation — Handle app navigation through the App
-utils - contains utilities that can be used throughout the App (e.g., internetmanager)
+3. **Configure Local Properties**
 
+   * In your **`~/.gradle/gradle.properties`** (or project level `gradle.properties`):
 
-🚀 How to Run the Project
+   ```properties
+   API_KEY=your_actual_api_key_here
+   ```
 
-Clone the Repository
+4. **Build & Run**
 
-git clone [https://github.com/your-org/postly-android.git](https://github.com/gomaa92/Postly.git)
+   * Sync Gradle and run the app on an emulator or device.
 
-Open in Android Studio
+---
 
-Android Studio Hedgehog or newer is recommended.
+## 📝 Notes
 
-Configure Local Properties
+* The app uses **Room** for offline caching.
+* Pagination is manually handled to give full control over the logic.
+* Network key is loaded from **Gradle properties** — make sure you add it before building.
 
-In your ~/.gradle/gradle.properties (or project level gradle.properties):
-
-API_KEY=your_actual_api_key_here
-
-Build & Run
-
-Sync Gradle and run the app on an emulator or device.
-
-
-📝 Notes
-
-The app uses Room for offline caching.
-
-Pagination is manually handled to give full control over the logic.
-
-Network key is loaded from Gradle properties — make sure you add it before building.
