@@ -17,7 +17,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
 import com.innovation.designsystem.theme.LocalSpacing
 
 @Composable
@@ -43,7 +42,7 @@ fun EmptyScreenWithRetry(
         Spacer(modifier = Modifier.height(spacing.m))
 
         Text(
-            text = "No Data Available, Please check your connectivity and try again.",
+            text = "No data available, Please check your connectivity and try again.",
             style = MaterialTheme.typography.bodyLarge.copy(color = MaterialTheme.colorScheme.onBackground),
             textAlign = TextAlign.Center
         )

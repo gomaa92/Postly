@@ -47,6 +47,7 @@ dependencies {
     implementation(project(":navigation"))
     implementation(project(":designsystem"))
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.core.splashscreen)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 }

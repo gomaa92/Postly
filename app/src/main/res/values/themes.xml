@@ -2,4 +2,16 @@
 <resources>
 
     <style name="Theme.Postly" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.Postly.Splash" parent="Theme.SplashScreen">
+        <!-- Customize your splash screen background -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+
+        <!-- Your splash icon -->
+
+
+        <!-- Optional: duration, keep this short -->
+        <item name="postSplashScreenTheme">@style/Theme.Postly</item>
+    </style>
+
 </resources>
