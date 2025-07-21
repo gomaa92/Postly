@@ -17,14 +17,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import com.innovation.designsystem.components.EndReachedMessage
 import com.innovation.designsystem.components.ErrorFullScreen
 import com.innovation.designsystem.components.LoadingItem
 import com.innovation.designsystem.components.PullToRefreshIndicator
 import com.innovation.designsystem.components.RetrySection
+import com.innovation.designsystem.theme.LocalSpacing
 import com.innovation.features.posts.presentation.viewmodel.PostsState
-import kotlin.collections.isNotEmpty
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -36,6 +35,7 @@ fun PostsListContent(
     onPostClick: (String) -> Unit,
     modifier: Modifier
 ) {
+    val spacing = LocalSpacing.current
     val lazyListState = rememberLazyListState()
     val isRefreshing = state.isLoading && state.posts.isEmpty()
     val pullToRefreshState = rememberPullToRefreshState()
@@ -74,7 +74,7 @@ fun PostsListContent(
     ) {
         LazyColumn(
             state = lazyListState,
-            contentPadding = PaddingValues(16.dp),
+            contentPadding = PaddingValues(spacing.m),
             modifier = Modifier.fillMaxWidth()
         ) {
             items(state.posts) { post ->
@@ -82,7 +82,7 @@ fun PostsListContent(
                     post = post,
                     onPostClick = onPostClick,
                 )
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(spacing.xs))
             }
             item {
                 when {

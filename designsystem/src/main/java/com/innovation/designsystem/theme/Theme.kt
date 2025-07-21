@@ -2,25 +2,14 @@ package com.innovation.designsystem.theme
 
 import android.os.Build
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.LocalContext
 import com.innovation.postly.ui.theme.Pink40
-import com.innovation.postly.ui.theme.Pink80
 import com.innovation.postly.ui.theme.Purple40
-import com.innovation.postly.ui.theme.Purple80
 import com.innovation.postly.ui.theme.PurpleGrey40
-import com.innovation.postly.ui.theme.PurpleGrey80
-import com.innovation.postly.ui.theme.Typography
-
-private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
-)
 
 private val LightColorScheme = lightColorScheme(
     primary = Purple40,

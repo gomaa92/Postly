@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
+import com.innovation.designsystem.theme.LocalSpacing
 import com.innovation.features.postdetails.presentation.viewmodel.PostDetailsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -38,10 +39,13 @@ fun PostDetailsScreen(
     modifier: Modifier = Modifier,
     viewModel: PostDetailsViewModel = hiltViewModel()
 ) {
+    val spacing = LocalSpacing.current
+
     LaunchedEffect(Unit) {
         viewModel.loadPostDetails(postId)
     }
     val post = viewModel.viewState.collectAsStateWithLifecycle().value.post
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -60,7 +64,7 @@ fun PostDetailsScreen(
                 .padding(paddingValues)
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
-                .padding(16.dp)
+                .padding(spacing.m)
         ) {
             post?.let {
                 if (post.imageURL.isNotEmpty()) {
@@ -71,9 +75,9 @@ fun PostDetailsScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(200.dp)
-                            .clip(RoundedCornerShape(12.dp))
+                            .clip(RoundedCornerShape(spacing.s))
                     )
-                    Spacer(modifier = Modifier.height(16.dp))
+                    Spacer(modifier = Modifier.height(spacing.m))
                 }
 
                 Text(
@@ -82,7 +86,7 @@ fun PostDetailsScreen(
                     fontWeight = FontWeight.Bold
                 )
 
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(spacing.xs))
 
                 Text(
                     text = post.description,

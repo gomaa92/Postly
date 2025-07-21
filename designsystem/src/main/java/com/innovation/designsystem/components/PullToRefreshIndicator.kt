@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.dp
 import com.innovation.designsystem.components.PullToRefreshIndicatorConstants.CROSSFADE_DURATION_MILLIS
 import com.innovation.designsystem.components.PullToRefreshIndicatorConstants.SPINNER_SIZE
+import com.innovation.designsystem.theme.LocalSpacing
 
 private object PullToRefreshIndicatorConstants {
     const val CROSSFADE_DURATION_MILLIS = 100
@@ -33,6 +34,7 @@ fun PullToRefreshIndicator(
     isRefreshing: Boolean,
     modifier: Modifier = Modifier,
 ) {
+    val spacing = LocalSpacing.current
     Box(
         modifier = modifier.pullToRefreshIndicator(
             state = state,
@@ -55,7 +57,7 @@ fun PullToRefreshIndicator(
                     imageVector = Icons.Filled.Refresh,
                     contentDescription = "Refresh",
                     modifier = Modifier
-                        .size(24.dp)
+                        .size(spacing.l)
                         .graphicsLayer {
                             val progress = distanceFraction()
                             this.alpha = progress

@@ -19,4 +19,4 @@ data class Spacing(
     val xxxxxl: Dp = 80.dp,
 )
 
-internal val LocalSpacing = staticCompositionLocalOf { Spacing() }
+val LocalSpacing = staticCompositionLocalOf { Spacing() }

@@ -10,17 +10,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import com.innovation.designsystem.theme.LocalSpacing
 
 @Composable
 fun ErrorFullScreen(onRetry: () -> Unit) {
+    val spacing = LocalSpacing.current
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text("Something went wrong.")
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(spacing.xs))
             Button(onClick = onRetry) {
                 Text("Retry")
             }
