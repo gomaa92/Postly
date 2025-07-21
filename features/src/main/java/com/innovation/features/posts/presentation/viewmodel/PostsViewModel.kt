@@ -42,20 +42,21 @@ class PostsViewModel @Inject constructor(
                     it.copy(
                         posts = newList,
                         isLoading = false,
-                        isEndReached = posts.size < pageSize || connectivityManager.isNetworkAvailable()
-                            .not()
+                        isEndReached = (posts.size < pageSize || connectivityManager.isNetworkAvailable()
+                            .not()) && newList.isNotEmpty(),
+                        isEmpty = newList.isEmpty()
                     )
                 }
                 currentPage++
             } catch (e: Exception) {
-                _viewState.update { it.copy(isLoading = false, error = e.message) }
+                _viewState.update { it.copy(isLoading = false, error = e.message, isEmpty = false) }
             }
             isLoading = false
         }
     }
 
     fun retry() {
-        loadPosts()
+        refresh()
     }
 
     fun refresh() {

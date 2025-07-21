@@ -17,6 +17,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.innovation.designsystem.components.EmptyScreenWithRetry
 import com.innovation.designsystem.components.EndReachedMessage
 import com.innovation.designsystem.components.ErrorFullScreen
 import com.innovation.designsystem.components.LoadingItem
@@ -65,11 +66,12 @@ fun PostsListContent(
         modifier = modifier,
         state = pullToRefreshState,
         indicator = {
-            PullToRefreshIndicator(
-                state = pullToRefreshState,
-                isRefreshing = isRefreshing,
-                modifier = Modifier.align(Alignment.TopCenter)
-            )
+            if (state.isEmpty.not())
+                PullToRefreshIndicator(
+                    state = pullToRefreshState,
+                    isRefreshing = isRefreshing,
+                    modifier = Modifier.align(Alignment.TopCenter)
+                )
         }
     ) {
         LazyColumn(
@@ -89,6 +91,9 @@ fun PostsListContent(
                     state.isLoading && state.posts.isNotEmpty() -> LoadingItem()
                     state.error != null && state.posts.isNotEmpty() -> RetrySection(onRetry)
                     state.isEndReached -> EndReachedMessage()
+                    state.isEmpty -> EmptyScreenWithRetry(
+                        onRetry
+                    )
                 }
             }
         }

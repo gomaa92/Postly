@@ -54,7 +54,7 @@ class PostsViewModelTest {
             awaitItem() // Loading
             val loadedState = awaitItem()
 
-            assertTrue(loadedState.isEndReached)
+            assertTrue(loadedState.isEmpty)
             assertTrue(loadedState.posts.isEmpty())
         }
     }

@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml:2:13-83
-INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml:2:13-83
+ADDED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml:2:13-83
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml:2:13-83
 	package
-		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml
+		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml
 	xmlns:android
-		ADDED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml:2:23-81
+		ADDED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml:2:23-81
 uses-sdk
-INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml reason: use-sdk injection requested
-INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml
-INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml reason: use-sdk injection requested
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml
+		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml
 	android:minSdkVersion
-		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1136431895249208585.xml
+		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/features/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196662573173217917.xml
