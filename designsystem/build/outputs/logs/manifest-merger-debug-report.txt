@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml:2:1-71
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml:2:1-71
+	package
+		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml
+INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ahmedgomaa/AndroidStudioProjects/Postly/designsystem/src/main/AndroidManifest.xml

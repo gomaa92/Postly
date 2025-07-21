@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Postly"
 include(":app")
- 
+include(":designsystem")
+include(":features")
+include(":utils")
