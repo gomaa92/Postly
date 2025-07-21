@@ -1,6 +1,6 @@
 package com.innovation.features.postdetails.domain.repository
 
-import com.innovation.features.posts.domain.model.Post
+import com.innovation.features.common.model.Post
 
 interface PostDetailsRepository {
 

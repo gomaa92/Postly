@@ -24,7 +24,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import com.innovation.features.posts.domain.model.Post
+import com.innovation.features.common.model.Post
 
 @Composable
 fun PostCard(post: Post, onPostClick: (String) -> Unit) {

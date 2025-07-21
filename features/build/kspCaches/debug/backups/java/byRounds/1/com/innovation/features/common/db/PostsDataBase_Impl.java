@@ -97,7 +97,7 @@ public final class PostsDataBase_Impl extends PostsDataBase {
         final TableInfo _infoPost = new TableInfo("post", _columnsPost, _foreignKeysPost, _indicesPost);
         final TableInfo _existingPost = TableInfo.read(_db, "post");
         if (! _infoPost.equals(_existingPost)) {
-          return new RoomOpenHelper.ValidationResult(false, "post(com.innovation.features.posts.data.local.entity.PostsEntity).\n"
+          return new RoomOpenHelper.ValidationResult(false, "post(com.innovation.features.common.db.entitiy.PostsEntity).\n"
                   + " Expected:\n" + _infoPost + "\n"
                   + " Found:\n" + _existingPost);
         }

@@ -1,6 +1,6 @@
 package com.innovation.features.posts.domain.repository
 
-import com.innovation.features.posts.domain.model.Post
+import com.innovation.features.common.model.Post
 
 interface PostsRepository {
     suspend fun getTopHeadlines(

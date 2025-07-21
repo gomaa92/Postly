@@ -1,10 +1,10 @@
 package com.innovation.features.posts.data.repository
 
 import com.innovation.features.posts.data.local.PostsDao
-import com.innovation.features.posts.data.mapper.toDomainModel
-import com.innovation.features.posts.data.mapper.toEntity
+import com.innovation.features.common.model.toDomainModel
+import com.innovation.features.common.model.toEntity
 import com.innovation.features.posts.data.remote.PostsService
-import com.innovation.features.posts.domain.model.Post
+import com.innovation.features.common.model.Post
 import com.innovation.features.posts.domain.repository.PostsRepository
 import com.innovation.utils.networkmanager.IConnectivityManager
 import javax.inject.Inject

@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.innovation.features.posts.data.local.entity.PostsEntity
+import com.innovation.features.common.db.entitiy.PostsEntity
 
 @Dao
 interface PostsDao {

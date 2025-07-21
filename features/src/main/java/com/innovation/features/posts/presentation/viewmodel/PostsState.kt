@@ -1,6 +1,6 @@
 package com.innovation.features.posts.presentation.viewmodel
 
-import com.innovation.features.posts.domain.model.Post
+import com.innovation.features.common.model.Post
 
 data class PostsState(
     val isLoading: Boolean = false,

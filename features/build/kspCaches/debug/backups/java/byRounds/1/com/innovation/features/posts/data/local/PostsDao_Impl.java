@@ -9,7 +9,7 @@ import androidx.room.RoomSQLiteQuery;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
-import com.innovation.features.posts.data.local.entity.PostsEntity;
+import com.innovation.features.common.db.entitiy.PostsEntity;
 import java.lang.Class;
 import java.lang.Exception;
 import java.lang.Object;

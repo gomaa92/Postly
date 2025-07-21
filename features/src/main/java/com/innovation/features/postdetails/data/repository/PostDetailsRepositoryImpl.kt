@@ -2,7 +2,7 @@ package com.innovation.features.postdetails.data.repository
 
 import com.innovation.features.postdetails.domain.repository.PostDetailsRepository
 import com.innovation.features.posts.data.local.PostsDao
-import com.innovation.features.posts.data.mapper.toDomainModel
+import com.innovation.features.common.model.toDomainModel
 import javax.inject.Inject
 
 class PostDetailsRepositoryImpl @Inject constructor(

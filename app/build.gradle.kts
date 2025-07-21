@@ -44,10 +44,9 @@ android {
 
 dependencies {
 
+    implementation(project(":navigation"))
     implementation(project(":designsystem"))
-    implementation(project(":utils"))
-    implementation(project(":features"))
+    implementation(libs.androidx.activity.compose)
     implementation(libs.hilt.android)
-    implementation(libs.androidx.navigation.compose)
     ksp(libs.hilt.compiler)
 }
