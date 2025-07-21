@@ -17,6 +17,16 @@ Postly is a modular Android application built with **Jetpack Compose**, followin
 
 ---
 
+## ✅ Unit Tests Coverage
+
+* **Repository Layer** — Tests with mocked API, DAO, and ConnectivityManager.
+* **Room Database** — Tests using in-memory Room database and Robolectric.
+* **ViewModel** — Tests with fake UseCases and mocked dependencies.
+* **Use Cases** — Unit tested with mocked Repository.
+* **Tech Stack Components** — Verified with isolated unit tests.
+
+---
+
 ## 🗂️ Project Modules
 
 * `app` — Main application module
