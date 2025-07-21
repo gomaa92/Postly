@@ -24,6 +24,8 @@ hiltNavigationCompose = "1.2.0"
 appcompat = "1.7.1"
 material = "1.12.0"
 lifecycle = "2.8.2"
+junitKtx = "1.2.1"
+turbine = "1.1.0"
 
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
@@ -64,6 +66,12 @@ androidx-navigation-compose = { module = "androidx.navigation:navigation-compose
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 lifecycle-runtimeCompose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "roomKtx" }
+androidx-test-core = { group = "androidx.test", name = "core", version = "1.5.0" }
+robolectric = { module = "org.robolectric:robolectric", version = "4.11.1" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
